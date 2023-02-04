@@ -3,52 +3,58 @@ import React from "react";
 const SignUp = () => {
     return (
         <>
-            <h1 className="text-4xl font-black">Crea tu Cuenta</h1>
-            <p>Crea tu cuenta llenando el formulario</p>
+            <div>
+                <h1 className="text-center text-4xl font-bold text-white">
+                    Crea tu Cuenta
+                </h1>
+                <p className="text-slate-300">
+                    Crea tu cuenta llenando el formulario
+                </p>
+            </div>
 
-            <div className="mt-10 rounded-3xl bg-white px-5 py-10 shadow-xl">
-                <form>
+            <div className="mt-3 max-w-xl rounded-3xl bg-transparent px-10 py-5">
+                <form className="flex flex-col gap-8">
                     <div className="mb-4">
-                        <label htmlFor="name" className="text-slate-800">
+                        <label
+                            htmlFor="name"
+                            className="font-semibold text-white"
+                        >
                             Nombre:
                         </label>
                         <input
                             id="name"
                             type="text"
-                            // className="mt-2 w-full rounded-3xl bg-gray-100 p-4"
-                            class="mt-2 w-full rounded-3xl border border-slate-300 bg-white p-4 text-slate-400 placeholder-slate-400 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"
+                            class="mt-2 w-full border-b-2 border-white bg-transparent p-4 text-white placeholder-white focus:border-b-yellow-100 focus:outline-none"
                             name="name"
                             placeholder="Ingresa tu nombre"
                         />
                     </div>
                     <div className="mb-4">
-                        <label htmlFor="email" className="text-slate-800">
+                        <label
+                            htmlFor="email"
+                            className="font-semibold text-white"
+                        >
                             Email:
                         </label>
                         <input
                             id="email"
                             type="email"
-                            // className="mt-2 w-full rounded-3xl bg-gray-100 p-4"
-                            class="mt-2 w-full rounded-3xl border border-slate-300 bg-white p-4 text-slate-400 placeholder-slate-400 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"
+                            class="mt-2 w-full border-b-2 border-white bg-transparent p-4 text-white placeholder-white focus:border-b-yellow-100 focus:outline-none"
                             name="email"
                             placeholder="Ingresa tu email"
                         />
-                        {/* <input
-                            type="email"
-                            name="email"
-                            class="mt-2 w-full rounded-3xl border border-slate-300 bg-white p-4 text-slate-400 placeholder-slate-400 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"
-                            placeholder="you@example.com"
-                        /> */}
                     </div>
                     <div className="mb-4">
-                        <label htmlFor="password" className="text-slate-800">
+                        <label
+                            htmlFor="password"
+                            className="font-semibold text-white"
+                        >
                             Contraseña:
                         </label>
                         <input
                             id="password"
                             type="password"
-                            // className="mt-2 w-full rounded-3xl bg-gray-100 p-4"
-                            class="mt-2 w-full rounded-3xl border border-slate-300 bg-white p-4 text-slate-400 placeholder-slate-400 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"
+                            class="mt-2 w-full border-b-2 border-white bg-transparent p-4 text-white placeholder-white focus:border-b-yellow-100 focus:outline-none"
                             name="password"
                             placeholder="Ingresa tu Contraseña"
                         />
@@ -56,22 +62,23 @@ const SignUp = () => {
                     <div className="mb-4">
                         <label
                             htmlFor="password_confirmation"
-                            className="text-slate-800"
+                            className="font-semibold text-white"
                         >
                             Confirmar Contraseña:
                         </label>
                         <input
                             id="password_confirmation"
                             type="password"
-                            // className="mt-2 w-full rounded-3xl bg-gray-100 p-4"
-                            class="mt-2 w-full rounded-3xl border border-slate-300 bg-white p-4 text-slate-400 placeholder-slate-400 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"
+                            class="mt-2 w-full border-b-2 border-white bg-transparent p-4 text-white placeholder-white focus:border-b-yellow-100 focus:outline-none"
                             name="password_confirmation"
                             placeholder="Confirma tu Contraseña"
                         />
+                    </div>
+                    <div className="mb-4">
                         <input
                             type="submit"
                             value="Crear Cuenta"
-                            className="mt-5 w-full cursor-pointer rounded-3xl bg-indigo-600 p-3 font-bold uppercase text-white hover:bg-indigo-800"
+                            className="mt-5 w-full cursor-pointer rounded-3xl bg-yellow-900 p-3 font-bold uppercase text-white hover:bg-black"
                         />
                     </div>
                 </form>

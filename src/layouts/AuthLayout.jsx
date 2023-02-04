@@ -7,12 +7,12 @@ import BackgroundAuth from "../assets/img/BackgroundAuth.jpeg";
 
 const AuthLayout = () => {
     return (
-        <main className="flex h-screen w-screen flex-col bg-[url('/src/assets/img/BackgroundAuth.jpeg')] md:flex-row">
-            <img src={Logo} alt="Logo" className="w-2/4" />
-            <div className="flex w-2/4 flex-col items-center md:flex-row">
-                <div className="w-full p-10">
-                    <Outlet />
-                </div>
+        <main className="flex h-screen w-screen">
+            <div className="flex w-2/4 justify-center items-start pt-28 bg-[url('/src/assets/img/bg-auth.jpg')] bg-cover bg-right-bottom bg-no-repeat">
+                <img src={Logo} alt="Logo" className="max-w-xs" />
+            </div>
+            <div className="flex w-2/4 flex-col items-center justify-center bg-black">
+                <Outlet />
             </div>
         </main>
     );
